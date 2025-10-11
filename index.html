@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Tú Eres Mi Persona Favorita, Dany! ❤️</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>¡Te Amo Dany!</h1>
+            <h2>Para la persona que hace que cada día valga la pena cada segundo en mi vida.</h2>
+            <p id="contador"></p>
+        </div>
+    </header>
+
+    <section class="section-card dedicacion">
+        <h2>Nuestra Historia</h2>
+        <p>Mi amor, eres la sorpresa más bonita que la vida me dio. Cada momento contigo es un tesoro, hasta hoy y hasta siempre. Por favor pon a un lado tu temor por mi y ven conmigo. Juntos exploraremos alegría dia a dia, y espero respondas (SOFIA).</p>
+        <p class="firma">Con todo mi amor, Tu Maxh </p>
+    </section>
+
+    <section class="section-card lista-amor">
+        <h2>10 Cosas Que Amo de Ti</h2>
+        <ul>
+            <li>Tu sonrisa que ilumina mis días.</li>
+            <li>La forma en que me miras.</li>
+            <li>Tu increíble sentido del humor.</li>
+            <li>La pasión que pones en todo lo que haces.</li>
+            <li>Tu bondad con todos.</li>
+            <li>Tus abrazos que me recargan de amor.</li>
+            <li>Nuestras conversaciones.</li>
+            <li>Tu curiosidad.</li>
+            <li>La paz que me da tu compañía.</li>
+            <li>Simplemente, te amo, eres la persona que busco.</li>
+        </ul>
+    </section>
+    
+    <section class="section-card contacto-whatsapp">
+        <h2>¡Te Estoy Esperando!</h2>
+        <p>Solo haz clic en el botón de abajo para que volvamos a hablar.</p>
+        <a href="https://wa.me/[941362114]?text=Hola%20Maxh,%20vi%20la%20p%C3%A1gina%20y%20quiero%20hablar%20contigo." target="_blank" class="whatsapp-button">
+            Escríbeme por WhatsApp ❤️
+        </a>
+    </section>
+    <footer>
+        <p>Hecho con muuuucho amor ❤️ para Dany. Nuestro amor es un viaje sin fin que pronto retomarás el camino conmigo :( </p>
+    </footer>
+
+    <script>
+        // *** IMPORTANTE: CAMBIA ESTA FECHA POR EL DÍA EN QUE COMENZÓ SU RELACIÓN ***
+        const fechaInicio = new Date("April 01, 2023 00:00:00").getTime();
+
+        const x = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = now - fechaInicio;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("contador").innerHTML = 
+                `Desde el primer diaaaaa: ${days} Días, ${hours} Horas, ${minutes} Min. y ${seconds} Seg.`;
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("contador").innerHTML = "¡Pronto Empezará Nuestra Historia!";
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>

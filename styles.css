@@ -1,0 +1,56 @@
+/* ========================================= */
+/* ESTILOS CSS - ¡TE AMO DANY! (VERSIÓN ROMÁNTICA Y LÍRICA) */
+/* ========================================= */
+
+/* 1. CONFIGURACIÓN GLOBAL Y FUENTES */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Fondo con un degradado muy suave, casi como un papel antiguo o un cielo al amanecer */
+    background: linear-gradient(180deg, #FFFDE7 0%, #FFE0B2 100%); /* Amarillo crema a Naranja pastel */
+    color: #4A148C; /* Púrpura oscuro para un toque elegante */
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* 2. CABECERA PRINCIPAL (HERO) */
+.hero {
+    /* Degradado principal que simula un atardecer romántico */
+    background: linear-gradient(135deg, #FF80AB 0%, #E91E63 100%); /* Rosa principal a Magenta */
+    color: white;
+    padding: 120px 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    
+    /* Forma geométrica: Borde inferior curvado */
+    border-bottom-left-radius: 40% 10%;
+    border-bottom-right-radius: 40% 10%;
+}
+
+.hero h1 {
+    font-family: 'Dancing Script', cursive; 
+    font-size: 6em; /* Titular más grande */
+    margin: 0 0 10px 0;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.4); /* Sombra más definida */
+    animation: fadeIn 2s ease-out; /* Animación de entrada */
+}
+
+.hero h2 {
+    font-size: 1.8em;
+    margin-top: 0;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+#contador {
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-top: 25px;
+    padding: 8px 20px;
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo semitransparente */
+    display: inline-block;
+    border-radius: 30px; /* Borde más redondeado */
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/*
